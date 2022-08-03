@@ -563,12 +563,10 @@ li > .accent-button {
   background-color: var(--bg-footer-color);
   transition: filter var(--transition-time-and-func);
 }
-
 .input-subscribe-form:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   cursor: pointer;
 }
-
 .input-subscribe-form::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -596,9 +594,7 @@ li > .accent-button {
   color: #ffffff;
   transition: box-shadow var(--transition-time-and-func), background-color var(--transition-time-and-func), color var(--transition-time-and-func);
 }
-
-.form-button-submit:hover,
-.form-button-submit:focus {
+.form-button-submit:hover, .form-button-submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--btn-bg-hover-color);
   color: var(--bg-body-color);

@@ -83,12 +83,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--bg-footer-color);
     transition: filter var(--transition-time-and-func);
-}
-.input-subscribe-form:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    cursor: pointer;
-}
-.input-subscribe-form::placeholder {
+
+    &:hover {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        cursor: pointer;
+    }
+    &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -96,7 +96,9 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    }
 }
+
 
 .form-button-submit {
     display: flex;
@@ -116,15 +118,17 @@
     transition: box-shadow var(--transition-time-and-func),
         background-color var(--transition-time-and-func),
         color var(--transition-time-and-func);
+
+        &:hover,
+            &:focus {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                background-color: var(--btn-bg-hover-color);
+                color: var(--bg-body-color);
+                cursor: pointer;
+            }
 }
 
-.form-button-submit:hover,
-.form-button-submit:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--btn-bg-hover-color);
-    color: var(--bg-body-color);
-    cursor: pointer;
-}
+
 
 .button-submit__icon {
     display: block;
