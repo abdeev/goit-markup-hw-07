@@ -1,0 +1,45 @@
+.features-list {
+    display: flex;
+}
+
+.features-card {
+    width: 270px;
+}
+
+.features-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-features {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: var(--block-bg-white-color);
+    border-radius: 4px;
+}
+
+.svg-features {
+    width: 70px;
+    height: 70px;
+}
+
+.features-card-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--header-dark-color);
+    margin: 0 0;
+}
+
+.features-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-description-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}

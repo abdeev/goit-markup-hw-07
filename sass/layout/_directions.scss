@@ -1,0 +1,29 @@
+.directions-list {
+    display: flex;
+    gap: 30px;
+}
+
+.directions-item {
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+}
+
+.directions-description {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: calc(100% - (100% - 54px));
+    min-height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}

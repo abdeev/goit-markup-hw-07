@@ -1,0 +1,118 @@
+.header {
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--borders-color);
+}
+
+.box-logo {
+    padding-left: 15px;
+    margin: 0;
+}
+
+.box-navi {
+    margin-left: 93px;
+}
+
+.logo-web {
+    text-decoration: none;
+    font-family: var(--secondary-font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-web-color);
+}
+
+.logo-studio {
+    text-decoration: none;
+    font-family: var(--secondary-font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-studio-dark);
+}
+
+.nav {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.nav-link {
+    padding: 32px 0;
+    text-decoration: none;
+    align-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--header-dark-color);
+    transition: color var(--transition-time-and-func);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contacts-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-description-color);
+}
+
+.svg-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.svg-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.mail {
+    padding: 32px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-time-and-func);
+}
+
+.phone {
+    padding: 32px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color var(--transition-time-and-func);
+}
+.nav-link:hover,
+.footer-contacts:hover,
+.nav-link:focus,
+.footer-contacts:focus,
+.mail:focus,
+.phone:focus,
+.mail:hover,
+.phone:hover {
+    color: var(--btn-bg-accent-color);
+    cursor: pointer;
+}

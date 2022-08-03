@@ -1,0 +1,31 @@
+.logos-list {
+    display: flex;
+}
+
+.logo-client {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid var(--color-icon-grey);
+    border-radius: 4px;
+    color: var(--color-icon-grey);
+    transition: color var(--transition-time-and-func),
+        border var(--transition-time-and-func);
+}
+
+.logo-client:hover {
+    color: var(--btn-bg-accent-color);
+    border: 1px solid var(--btn-bg-accent-color);
+    cursor: pointer;
+}
+
+.logo-client:focus {
+    color: var(--btn-bg-accent-color);
+}
+
+.logos-list>li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.svg-client {
+    fill: currentColor;
+}

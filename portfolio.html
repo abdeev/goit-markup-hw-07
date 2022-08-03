@@ -18,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <!-- <link rel="stylesheet" href="./styles/style-portfolio.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="body">
@@ -296,39 +296,64 @@
             </ul>
           </address>
         </div>
-
-        <div class="subscribe">
-          <h2 class="header-subscribe">приєднуйтесь</h2>
-          <ul class="social-links">
-            <li>
-              <a class="button-social button-footer" tabindex="0">
-                <svg class="svg-social" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#instagram"></use>
+        <div class="subscribe-functions">
+          <div class="subscribe">
+            <h2 class="header-subscribe">приєднуйтесь</h2>
+            <ul class="social-links">
+              <li>
+                <a class="button-social button-footer" tabindex="0">
+                  <svg class="svg-social" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="button-social button-footer" tabindex="0">
+                  <svg class="svg-social" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="button-social button-footer" tabindex="0">
+                  <svg class="svg-social" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="button-social button-footer" tabindex="0">
+                  <svg class="svg-social" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-form-container">
+            <p class="header-subscribe">Підпишіться на розсилку</p>
+            <form class="subscribe-form">
+              <label class="visually-hidden" for="email"
+                >Підпишіться на розсилку</label
+              >
+              <span class="input-subscribe-container">
+                <input
+                  class="input-subscribe-form"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </span>
+              <button class="form-button-submit button-plane" type="submit">
+                Підписатися
+                <svg class="button-submit__icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#icon-submit"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a class="button-social button-footer" tabindex="0">
-                <svg class="svg-social" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="button-social button-footer" tabindex="0">
-                <svg class="svg-social" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="button-social button-footer" tabindex="0">
-                <svg class="svg-social" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
