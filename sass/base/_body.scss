@@ -5,15 +5,3 @@
     background-color: var(--bg-head-color);
     margin-top: 0px;
 }
-li>.accent-button {
-    color: var(--btn-bg-accent-color);
-}
-.accent-button::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 100%;
-    border: 2px solid var(--btn-bg-accent-color);
-    transform: translateY(29px);
-    border-radius: 2px;
-}

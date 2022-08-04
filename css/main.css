@@ -37,6 +37,15 @@
   overflow: hidden;
 }
 
+.modal-form, .team-list {
+  display: flex;
+}
+
+.footer-contacts:hover, .footer-contacts:focus, .phone:hover, .phone:focus, .mail:hover, .mail:focus, .nav-link:hover, .nav-link:focus {
+  color: var(--btn-bg-accent-color);
+  cursor: pointer;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -79,26 +88,16 @@ address {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 .body {
   min-width: 1200px;
   font-family: var(--primary-font-family);
   color: var(--main-header-color);
   background-color: var(--bg-head-color);
   margin-top: 0px;
-}
-
-li > .accent-button {
-  color: var(--btn-bg-accent-color);
-}
-
-.accent-button::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  border: 2px solid var(--btn-bg-accent-color);
-  transform: translateY(29px);
-  border-radius: 2px;
 }
 
 .container {
@@ -118,8 +117,8 @@ li > .accent-button {
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -136,6 +135,37 @@ li > .accent-button {
   margin-right: 10px;
 }
 
+.logo {
+  text-decoration: none;
+  font-family: var(--secondary-font-logo);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo--web {
+  color: var(--logo-web-color);
+}
+
+.logo--studio {
+  color: var(--logo-studio-dark);
+}
+
+li > .accent-button {
+  color: var(--btn-bg-accent-color);
+}
+
+.accent-button::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  border: 2px solid var(--btn-bg-accent-color);
+  transform: translateY(29px);
+  border-radius: 2px;
+}
+
 .button-social {
   display: flex;
   justify-content: center;
@@ -147,23 +177,21 @@ li > .accent-button {
   color: var(--color-icon-grey);
   transition: color var(--transition-time-and-func), background-color var(--transition-time-and-func);
 }
-
-.svg-social {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
 .button-social:hover {
   background-color: var(--btn-bg-accent-color);
   color: #ffffff;
   cursor: pointer;
 }
-
 .button-social:focus {
   background-color: var(--btn-bg-accent-color);
   color: #ffffff;
   outline: transparent;
+}
+
+.svg-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .header {
@@ -179,26 +207,6 @@ li > .accent-button {
 
 .box-navi {
   margin-left: 93px;
-}
-
-.logo-web {
-  text-decoration: none;
-  font-family: var(--secondary-font-logo);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--logo-web-color);
-}
-
-.logo-studio {
-  text-decoration: none;
-  font-family: var(--secondary-font-logo);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--logo-studio-dark);
 }
 
 .nav {
@@ -222,14 +230,13 @@ li > .accent-button {
   padding: 32px 0;
   text-decoration: none;
   align-content: center;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
+  font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-dark-color);
   transition: color var(--transition-time-and-func);
 }
-
 .contacts {
   display: flex;
   align-items: center;
@@ -237,9 +244,9 @@ li > .accent-button {
 }
 
 .contacts-item {
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.17;
+  font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-description-color);
 }
@@ -251,19 +258,18 @@ li > .accent-button {
   fill: currentColor;
 }
 
-.svg-phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
 .mail {
   padding: 32px 0;
   text-decoration: none;
   display: flex;
   align-items: center;
   transition: color var(--transition-time-and-func);
+}
+.svg-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .phone {
@@ -273,19 +279,6 @@ li > .accent-button {
   align-items: center;
   transition: color var(--transition-time-and-func);
 }
-
-.nav-link:hover,
-.footer-contacts:hover,
-.nav-link:focus,
-.footer-contacts:focus,
-.mail:focus,
-.phone:focus,
-.mail:hover,
-.phone:hover {
-  color: var(--btn-bg-accent-color);
-  cursor: pointer;
-}
-
 .hero {
   position: relative;
   max-width: 1600px;
@@ -319,8 +312,8 @@ li > .accent-button {
   border-style: none;
   background-color: var(--btn-bg-accent-color);
   color: var(--btn-text-accent-color);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -338,7 +331,6 @@ li > .accent-button {
 .features-card {
   width: 270px;
 }
-
 .features-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -358,9 +350,9 @@ li > .accent-button {
 
 .features-card-header {
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.17;
+  font-weight: 700;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--header-dark-color);
   margin: 0 0;
@@ -397,8 +389,8 @@ li > .accent-button {
   width: 100%;
   height: calc(100% - (100% - 54px));
   min-height: 70px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -411,7 +403,6 @@ li > .accent-button {
 }
 
 .team-list {
-  display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -429,8 +420,8 @@ li > .accent-button {
 
 .team-header {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -439,8 +430,8 @@ li > .accent-button {
 
 .team-description {
   margin-bottom: 16px;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -449,6 +440,9 @@ li > .accent-button {
 
 .logos-list {
   display: flex;
+}
+.logos-list > li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .logo-client {
@@ -459,19 +453,13 @@ li > .accent-button {
   color: var(--color-icon-grey);
   transition: color var(--transition-time-and-func), border var(--transition-time-and-func);
 }
-
 .logo-client:hover {
   color: var(--btn-bg-accent-color);
   border: 1px solid var(--btn-bg-accent-color);
   cursor: pointer;
 }
-
 .logo-client:focus {
   color: var(--btn-bg-accent-color);
-}
-
-.logos-list > li:not(:last-child) {
-  margin-right: 30px;
 }
 
 .svg-client {
@@ -487,18 +475,18 @@ li > .accent-button {
   margin-right: 70px;
 }
 
-.logo-footer {
+.logo-wrapper {
   margin-bottom: 20px;
 }
 
-.logo-studio-footer {
+.logo--footer {
   color: var(--logo-studio-light);
 }
 
 .address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -516,30 +504,15 @@ li > .accent-button {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-time-and-func);
 }
-
 .button-footer {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.subscribe {
-  align-self: flex-start;
-  margin-right: 93px;
-}
-
-.header-subscribe {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 36px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
 .subscribe-functions {
   display: flex;
   align-self: flex-start;
+  margin-top: 12px;
 }
 
 .subscribe-form {
@@ -553,61 +526,19 @@ li > .accent-button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.input-subscribe-form {
-  width: 358px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 4px;
-  border-style: inset;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: var(--bg-footer-color);
-  color: rgba(255, 255, 255, 0.6);
-  transition: filter var(--transition-time-and-func);
-}
-.input-subscribe-form:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  cursor: pointer;
-}
-.input-subscribe-form::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.subscribe {
+  align-self: flex-start;
+  margin-right: 93px;
 }
 
-.form-button-submit {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
+.header-subscribe {
+  margin-bottom: 20px;
+  font-size: 14px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  letter-spacing: 0.06em;
-  background-color: var(--btn-bg-accent-color);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #ffffff;
-  transition: box-shadow var(--transition-time-and-func), background-color var(--transition-time-and-func), color var(--transition-time-and-func);
-}
-.form-button-submit:hover, .form-button-submit:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--btn-bg-hover-color);
-  color: var(--bg-body-color);
-  cursor: pointer;
-}
-
-.button-submit__icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: currentColor;
 }
 
 .portfolio-main {
@@ -627,25 +558,23 @@ li > .accent-button {
   padding: 6px 22px;
   border-radius: 4px;
   border-style: none;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.62;
+  font-weight: 700;
+  line-height: 1.13;
   letter-spacing: 0.06em;
   transition: background-color var(--transition-time-and-func), box-shadow var(--transition-time-and-func);
 }
-
-.active-btn {
-  background-color: var(--btn-bg-accent-color);
-  color: var(--btn-text-accent-color);
-}
-
-.button-filter:hover,
-.button-filter:focus {
+.button-filter:hover, .button-filter:focus {
   background-color: var(--btn-bg-accent-color);
   color: var(--btn-text-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   outline: transparent;
+}
+
+.active-btn {
+  background-color: var(--btn-bg-accent-color);
+  color: var(--btn-text-accent-color);
 }
 
 .projects {
@@ -660,16 +589,17 @@ li > .accent-button {
 
 .project-item {
   position: relative;
-  flex-basis: calc((100% - 30px - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   background-color: var(--bg-head-color);
   transition: box-shadow var(--transition-time-and-func), translate var(--transition-time-and-func);
 }
-
-.project-item:hover,
-.project-item:focus {
+.project-item:hover, .project-item:focus {
   outline: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.project-item:hover .overlay-project-description, .project-item:focus .overlay-project-description {
+  transform: translateY(0);
 }
 
 .img-project {
@@ -686,17 +616,13 @@ li > .accent-button {
   top: 0;
   left: 0;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--btn-text-accent-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--transition-time-and-func);
-}
-
-.project-item:hover .overlay-project-description,
-.project-item:focus .overlay-project-description {
-  transform: translateY(0);
 }
 
 .card-description {
@@ -708,17 +634,17 @@ li > .accent-button {
 .projects-list-title {
   margin-bottom: 4px;
   text-align: left;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-dark-color);
 }
 
 .projects-list-desription {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-description-color);
 }
@@ -795,7 +721,6 @@ li > .accent-button {
 }
 
 .modal-form {
-  display: flex;
   flex-direction: column;
   padding: 40px;
   margin: 0 auto;
@@ -816,19 +741,11 @@ li > .accent-button {
   border-radius: 4px;
   transition: border var(--transition-time-and-func);
 }
-
-.form-input:hover,
-.form-input:focus {
+.form-input:hover, .form-input:focus {
   border: 1px solid var(--btn-bg-accent-color);
   outline: var(--btn-bg-accent-color);
 }
-
-.form-input:hover + .icon-profile,
-.form-input:focus + .icon-profile,
-.form-input:hover + .icon-tel,
-.form-input:focus + .icon-tel,
-.form-input:hover + .icon-mail,
-.form-input:focus + .icon-mail {
+.form-input:hover + .icon-profile, .form-input:focus + .icon-profile, .form-input:hover + .icon-tel, .form-input:focus + .icon-tel, .form-input:hover + .icon-mail, .form-input:focus + .icon-mail {
   fill: var(--btn-bg-accent-color);
 }
 
@@ -867,7 +784,6 @@ li > .accent-button {
   height: 120px;
   resize: none;
 }
-
 .comment::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -940,6 +856,63 @@ li > .accent-button {
   transition: border var(--transition-time-and-func);
 }
 
-.button-modal {
+.button__modal {
   margin-top: 30px;
+}
+
+.input-subscribe-form {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 4px;
+  border-style: inset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--bg-footer-color);
+  color: rgba(255, 255, 255, 0.6);
+  transition: filter var(--transition-time-and-func);
+}
+.input-subscribe-form:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  cursor: pointer;
+}
+.input-subscribe-form::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-button-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
+  transition: box-shadow var(--transition-time-and-func), background-color var(--transition-time-and-func), color var(--transition-time-and-func);
+}
+.form-button-submit:hover, .form-button-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-bg-hover-color);
+  color: var(--bg-body-color);
+  cursor: pointer;
+}
+
+.button-submit__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

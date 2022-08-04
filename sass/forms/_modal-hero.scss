@@ -72,7 +72,7 @@
 }
 
 .modal-form {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
     padding: 40px;
     margin: 0 auto;
@@ -92,22 +92,26 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border var(--transition-time-and-func);
+
+    &:hover,
+        &:focus {
+            border: 1px solid var(--btn-bg-accent-color);
+            outline: var(--btn-bg-accent-color);
+        }
+
+        &:hover+.icon-profile,
+        &:focus+.icon-profile,
+        &:hover+.icon-tel,
+        &:focus+.icon-tel,
+        &:hover+.icon-mail,
+        &:focus+.icon-mail {
+            fill: var(--btn-bg-accent-color);
+        }
 }
 
-.form-input:hover,
-.form-input:focus {
-    border: 1px solid var(--btn-bg-accent-color);
-    outline: var(--btn-bg-accent-color);
-}
 
-.form-input:hover+.icon-profile,
-.form-input:focus+.icon-profile,
-.form-input:hover+.icon-tel,
-.form-input:focus+.icon-tel,
-.form-input:hover+.icon-mail,
-.form-input:focus+.icon-mail {
-    fill: var(--btn-bg-accent-color);
-}
+
+
 
 .icon-profile {
     position: absolute;
@@ -143,15 +147,17 @@
     padding: 12px 16px;
     height: 120px;
     resize: none;
+
+    &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
-.comment::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
+
 
 .form-label {
     margin-bottom: 4px;
@@ -217,6 +223,6 @@
     transition: border var(--transition-time-and-func);
 }
 
-.button-modal {
+.button__modal {
     margin-top: 30px;
 }

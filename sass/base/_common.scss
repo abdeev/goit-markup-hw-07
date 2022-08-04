@@ -1,3 +1,4 @@
+// скидання стилів браузеру
 html {
     box-sizing: border-box;
 }
@@ -38,4 +39,7 @@ img {
 
 address {
     font-style: normal;
+}
+button{
+    cursor: pointer;
 }

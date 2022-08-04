@@ -1,5 +1,9 @@
 .logos-list {
     display: flex;
+
+    &>li:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .logo-client {
@@ -10,21 +14,19 @@
     color: var(--color-icon-grey);
     transition: color var(--transition-time-and-func),
         border var(--transition-time-and-func);
+
+        &:hover {
+                color: var(--btn-bg-accent-color);
+                border: 1px solid var(--btn-bg-accent-color);
+                cursor: pointer;
+            }
+        
+            &:focus {
+                color: var(--btn-bg-accent-color);
+            }
 }
 
-.logo-client:hover {
-    color: var(--btn-bg-accent-color);
-    border: 1px solid var(--btn-bg-accent-color);
-    cursor: pointer;
-}
 
-.logo-client:focus {
-    color: var(--btn-bg-accent-color);
-}
-
-.logos-list>li:not(:last-child) {
-    margin-right: 30px;
-}
 
 .svg-client {
     fill: currentColor;

@@ -1,14 +1,24 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+
+@import './utils/functions';
+@import './utils/placeholders';
+@import './utils/mixin';
+
 @import "./base/common";
 @import "./base/body";
 @import "./base/container";
 @import "./base/section";
 @import "./base/flex";
 @import "./base/section-title";
-@import "./base/social-buttons";
+@import "./base/social-links";
+
+@import "./components/logo";
+@import "./components/accent-button";
+@import "./components/button-social";
+
 @import "./layout/header";
-// @import logo
+
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/directions";
@@ -19,3 +29,4 @@
 @import "./portfolio-page/buttons-block";
 @import "./portfolio-page/pojects-gallery";
 @import "./forms/modal-hero";
+@import "./forms/subscribe-form";
