@@ -1,5 +1,7 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-https://abdeev.github.io/goit-markup-hw-06/
+https://abdeev.github.io/goit-markup-hw-07/
 
-homework 06 for GoIT school
+homework 07 for GoIT school
+
+BEM & SCSS
