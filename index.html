@@ -17,7 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -557,7 +556,7 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
         <label class="form-label" for="user-name">Ім'я</label>
-        <span class="input-wrapper">
+        <div class="input-wrapper">
           <input 
         class="form-input" 
         type="text" 
@@ -570,9 +569,9 @@
         <svg class="icon-profile" width="12" height="12">
           <use href="./images/icons/sprite.svg#profile-icon"></use>
         </svg>
-        </span>
+        </div>
         <label class="form-label" for="user-tel">Телефон</label>
-        <span class="input-wrapper">
+        <div class="input-wrapper">
         <input 
         class="form-input" 
         type="user-tel" 
@@ -585,9 +584,9 @@
         <svg class="icon-tel" >
           <use href="./images/icons/sprite.svg#phone-tube"></use>
         </svg>
-        </span>
+        </div>
         <label class="form-label" for="user-mail">Пошта</label>
-        <span class="input-wrapper">
+        <div class="input-wrapper">
           <input 
         class="form-input" 
         type="email" 
@@ -599,7 +598,7 @@
         <svg class="icon-mail" >
           <use href="./images/icons/sprite.svg#envelope-form"></use>
         </svg>
-        </span>
+        </div>
         <span class="form-label">Коментар</span>
         <label class="form-label" for="user-comment"><textarea 
         class="form-input comment" 
@@ -607,7 +606,7 @@
         name="user-comment" 
         placeholder="Введіть текст"></textarea>
       </label>
-      <span class="input-wrapper">
+      <div class="input-wrapper">
       <label class="accept-description" for="accept-checker">
         Погоджуюся з розсилкою та приймаю&nbsp;
         <a class="terms" href="https://www.random.org/terms/2020-08-01/website">
@@ -624,7 +623,7 @@
         <use href="./images/icons/sprite.svg#icon-check"></use>
       </svg>
     </label>
-      </span>
+      </div>
       
       <button type="submit" class="form-button-submit button-modal">Відправити</button>
       

@@ -82,6 +82,7 @@
     border-style: inset;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--bg-footer-color);
+    color: rgba(255, 255, 255, 0.6);
     transition: filter var(--transition-time-and-func);
 
     &:hover {
