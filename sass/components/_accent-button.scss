@@ -1,8 +1,8 @@
-li>.accent-button {
+li>.accent__button {
     color: var(--btn-bg-accent-color);
 }
 
-.accent-button::after {
+.accent__button::after {
     position: absolute;
     display: block;
     content: "";

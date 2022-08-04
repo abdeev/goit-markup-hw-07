@@ -1,15 +1,15 @@
-.directions-list {
+.directions__list {
     display: flex;
     gap: 30px;
 }
 
-.directions-item {
+.directions__item {
     position: relative;
     display: flex;
     margin: 0px auto;
 }
 
-.directions-description {
+.directions__description {
     position: absolute;
     display: flex;
     align-items: center;
