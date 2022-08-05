@@ -1,10 +1,10 @@
-.sort-buttons {
+.filter {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
-.button-filter {
+.filter__button {
   background-color: var(--btn-bg-def-color);
   color: var(--btn-text-def-color);
   padding: 6px 22px;
@@ -24,7 +24,7 @@
         outline: transparent;
       }
 }
-.sort-buttons--active {
+.filter__button--active {
   background-color: var(--btn-bg-accent-color);
   color: var(--btn-text-accent-color);
 }
